@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesón la Rivera - Restaurante Tradicional en Orusco de Tajuña</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FF6B35, #F7931E);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://via.placeholder.com/1200x400/FF6B35/FFFFFF?text=Mesón+la+Rivera') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        h1, h2 {
+            margin-top: 0;
+            color: #FF6B35;
+        }
+        .reviews {
+            font-size: 1.5em;
+            color: #FFD700;
+            font-weight: bold;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .services, .contact, .hours {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .services div, .contact div, .hours div {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+            background: #FFF8DC;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta button {
+            background: #FF6B35;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .cta button:hover {
+            background: #E55A2B;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mesón la Rivera</h1>
+        <p class="reviews">⭐ 4.2 (343 reseñas)</p>
+        <p class="price">1-10 € · Restaurante</p>
+        <p>¡Descubre el sabor auténtico de la gastronomía tradicional en un ambiente inolvidable!</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>En Mesón la Rivera, te invitamos a disfrutar de platos caseros elaborados con ingredientes frescos y locales. Nuestro restaurante combina tradición y comodidad para crear momentos inolvidables. ¡Ven y déjate sorprender por nuestros sabores únicos!</p>
+        </section>
+
+        <section class="section">
+            <h2>Opciones de Servicios</h2>
+            <div class="services">
+                <div>🌿 Terraza al aire libre para disfrutar del buen tiempo</div>
+                <div>🏠 Comedor privado ideal para eventos especiales</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Ubicación</h2>
+            <p>Encuéntranos fácilmente en el mapa:</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.552!2d-3.208!3d40.286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f8b8b8b8b8b%3A0x1234567890abcdef!2sC.%20Gran%20V%C3%ADa%2C%209%2C%2028570%20Orusco%20de%20Taju%C3%B1a%2C%20Madrid!5e0!3m2!1ses!2ses!4v1690000000000!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="section">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <div><strong>Dirección:</strong> C. Gran Vía, 9, 28570 Orusco de Tajuña, Madrid</div>
+                <div><strong>Teléfono:</strong> 918 72 42 52</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Horario</h2>
+            <div class="hours">
+                <div><strong>Martes:</strong> 8:00–16:30</div>
+                <div><strong>Miércoles:</strong> 8:00–23:00</div>
+                <div><strong>Jueves:</strong> 8:00–16:30</div>
+                <div><strong>Viernes:</strong> 8:00–23:00</div>
+                <div><strong>Sábado:</strong> 8:00–23:00</div>
+                <div><strong>Domingo:</strong> 8:00–23:00</div>
+                <div><strong>Lunes:</strong> Cerrado</div>
+            </div>
+        </section>
+
+        <div class="cta">
+            <button onclick="alert('¡Reserva ahora llamando al 918 72 42 52!')">¡Reserva tu Mesa!</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mesón la Rivera. Todos los derechos reservados. ¡Te esperamos con los brazos abiertos!</p>
+    </footer>
+</body>
+</html>
